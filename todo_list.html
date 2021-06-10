@@ -12,15 +12,12 @@
     <div class="container">
         <h1>TO-DO LIST</h1>
         <input type="text" id="input-task" placeholder="new task">
-        <button id="btn-add-task">Add</button>
+        <button id="btn-add-task" disabled>Add</button>
     </div>
-        <div id="to-do-box">
-            <div class="to-do" id="inactive-div">
-                <img src="trash-solid.svg" alt="" class="img-delete">
-                <input type="checkbox" class="checkbox-task-done">
-                <p></p>
-            </div>
-        </div>
+        <form class="to-do-box">
+            <ul class="ul-task"></ul>
+        </form>
+
         <button class="btn-2">Служебная</button>
         
     <script src="app.js"></script>
