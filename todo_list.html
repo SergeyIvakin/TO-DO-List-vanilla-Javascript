@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TO-DO List</title>
     <link rel="stylesheet" href="my.css">
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
     <div class="container">
         <h1>TO-DO LIST</h1>
+        <p>Total tasks: <span class="total-tasks"></span></p>
+        <p>Total done: <span class="total-done"></span></p>
         <input type="text" id="input-task" placeholder="new task">
         <button id="btn-add-task" disabled>Add</button>
     </div>
-        <form class="to-do-box">
+        <div class="to-do-box">
             <ul class="ul-task"></ul>
-        </form>
-
-        <button class="btn-2">Служебная</button>
+            <button class="clear-all-todo inactive">Clear all</button>
+        </div>
         
     <script src="app.js"></script>
 </body>
