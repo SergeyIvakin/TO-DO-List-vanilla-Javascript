@@ -34,33 +34,36 @@ h1 {
 .to-do-box {
     max-width: 400px;
     margin: 0 auto;
-    background-color: beige;
-    border-radius: 5px;  
+    border-radius: 5px;
 }
 ul {
     list-style-type: none;
     list-style: none;
 }
 .ul-task {
-    padding: 0px 10px;
+    padding: 0px;
     font-size: 24px; 
+    margin-bottom: 15px;
 }
 li {
     padding: 5px;
     padding-left: 0px;
-    border-bottom: 1px solid blue; 
+    background-color: beige;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(10, 155, 238);
+    cursor: move;
 }
-/* li:nth-last-child(1) {
-    border-bottom: none; 
-    margin-bottom: 10px;
-} */
+li:nth-last-child(1) {
+    margin-bottom: 0px;
+}
 .delete-task {
     cursor: pointer;
     color: red;
     font-weight: bold;
     font-size: 24px;
     margin-right: 4px;
-    
+    margin-left: 5px;
 }
 .done-task {
     text-decoration: line-through;
@@ -69,13 +72,14 @@ li {
 }
 .clear-all-todo {
     padding: 2px 5px;
-    font-size: 18px;
+    margin: 0 auto;
+    display: block;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     background-color: rgb(62, 181, 228);
     color: white;
     border-radius: 4px;
-    margin: 0px 0px 10px 10px;
 }
 .active {
     display: block;
@@ -103,7 +107,6 @@ li {
     background-color: grey;
     border-radius: 3px;
     cursor: pointer;
-    
 }
 .edit-cancel {
     background-color: grey;
@@ -115,6 +118,19 @@ p {
     margin: 15px 5px 15px 5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: darkorange;
+}
+.drag-elem-selected {
+    opacity: 0.5;
+}
+label {
+    cursor: pointer;
+}
+@media screen and (max-width: 310px) {
+    #input-task {
+        margin-bottom: 15px;
+        width: 95%;
+    }
+    
 }
 
 
